@@ -1,0 +1,12 @@
+# \ <section:top>
+*~
+*.swp
+*.log
+# / <section:top>
+# \ <section:mid>
+/_build/
+/cover/
+/deps/
+erl_crash.dump
+/mix.lock
+# / <section:mid>

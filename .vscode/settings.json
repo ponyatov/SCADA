@@ -1,0 +1,39 @@
+{
+    /* \ <section:multi> */
+    "multiCommand.commands": [
+        {
+            "command": "multiCommand.f11",
+            "sequence": [
+                "workbench.action.files.saveAll",
+                {"command": "workbench.action.terminal.sendSequence","args": {"text":
+                    "\u000Dclear;make\u000D"
+                }}]
+        },
+        {
+            "command": "multiCommand.f12",
+            "sequence": [
+                "workbench.action.files.saveAll",
+                {"command": "workbench.action.terminal.sendSequence","args": {"text":
+                    "\u000DSystem.stop\u000D"
+                }}]
+        },
+    ],
+    /* / <section:multi> */
+    "files.watcherExclude": {
+        /* \ <section:watcher> */
+            "**/_build/**": true, "**/.elixir_ls/**": true,
+            "**/deps/**": true,
+            "**/.formatter.exs": true, "**/mix.lock": true,
+        /* / <section:watcher> */
+    },
+    "files.exclude": {
+        /* \ <section:exclude> */
+            "**/_build/**": true, "**/.elixir_ls/**": true,
+            "**/deps/**": true,
+            "**/.formatter.exs": true, "**/mix.lock": true,
+        /* / <section:exclude> */
+    },
+    "files.associations": {
+    },
+    "editor.tabSize": 4
+}
